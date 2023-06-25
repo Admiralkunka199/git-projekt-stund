@@ -1,0 +1,63 @@
+:root {
+    --primary-text-colore: #212121;
+    --secondary-text-color: #757575;
+    --accent-colore: #2196F3;
+    --background-color-st: #ffffff;
+}
+
+body{
+  background-color: var(--background-color-st);
+  color: var(--primary-text-colore);
+  font-family: Roboto, sans-serif;
+}
+
+.list{
+    list-style: none;
+}
+
+/* Header */
+
+/* logo  */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0,78;
+  text-decoration: none;
+  color: var(--primary-text-colore);
+  }
+.first-item {
+    color: var(--accent-colore);
+  }
+  /* nav menu */
+.nav-menu-list .link-nav {
+    color: var(--primary-text-colore);
+  }
+  
+.link-nav:hover, .link-nav:focus{
+    color: var(--accent-colore);
+  }
+
+.contacts {
+    color: var(--secondary-text-color);
+  }
+
+.contacts:hover, .contacts:focus {
+    color: var(--accent-colore);
+  }
+
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  text-decoration: none;
+}
+
+/* footer */
+.footer { 
+  background-color: #6a4343;
+}
+
+.address{
+  font-style: normal;  
+}
