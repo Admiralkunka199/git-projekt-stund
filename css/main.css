@@ -45,9 +45,16 @@
 
 /* Hero section */
 .hero {
-  background-color: blue;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40),
+      rgba(47, 48, 58, 0.40)), url("../images/Img-baner.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -76,6 +83,8 @@
   background-color: var(--accent-colore);
   border-radius: 4px;
   border-color: var(--accent-colore);
+
+  cursor: pointer;
 }
 
 /* SECTIONS Преимущиствa */
@@ -95,10 +104,31 @@
   align-self: flex-start;
 }
 
-.advantages.list-element img {
+.advantages.list-element::before {
+  content: " ";
   display: block;
-  margin: 0 auto;
+  height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages.list-element:nth-child(1):before {
+  background-image: url("../images/Vector-icon.svg");
+}
+
+.advantages.list-element:nth-child(2):before {
+  background-image: url("../images/Vector-1.svg");
+}
+
+.advantages.list-element:nth-child(3):before {
+  background-image: url("../images/Vector-2.svg");
+}
+
+.advantages.list-element:nth-child(4):before {
+  background-image: url("../images/Vector-3.svg");
 }
 
 .advantages>.list-element+.list-element {
@@ -121,7 +151,6 @@
 
 .we-work .list {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .we-work .list>.item:not(:nth-child(3n)) {
@@ -144,6 +173,8 @@
 
 .we-work>.item>.work {
   text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
   background-color: tomato;
 }
 

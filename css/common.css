@@ -182,14 +182,40 @@ p {
 
 .social-block>.list {
   display: flex;
+  padding: 0;
 }
 
 .list>.social-footer {
+  display: inline-flex;
   margin-right: 10px;
   padding: 12px;
   background-color: var(--social-button);
   border-radius: 50%;
+
+  font-size: 0;
 }
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-icon .inst {
+  background-image: url("./images/social-futer/instagram.svg");
+}
+
+.footer-icon .tweet {
+  background-image: url("../images/social-futer/tweeter.svg");
+}
+
+.footer-icon .facebook {
+  background-image: url("../images/social-futer/facebook.svg");
+}
+
+.footer-icon .lin {
+  background-image: url("../images/social-futer/linkedin.svg");
+}
+
 
 .title-subscribe {
   margin-bottom: 20px;
