@@ -56,19 +56,22 @@ p {
   display: inline-flex;
   width: 20px;
   height: 20px;
+  margin-left: 10px;
   background-repeat: no-repeat;
   align-items: center;
   background-image: url("../images/envelope.svg");
+  background-position: 0px 0px;
 }
 
 .list>.phone::before {
   content: "";
   display: inline-flex;
   width: 20px;
-  height: 20px;
+  height: 25px;
   background-repeat: no-repeat;
   align-items: center;
   background-image: url("../images/smartphone.svg");
+  background-position: 0px 0px;
 }
 
 .address-list {
@@ -196,23 +199,27 @@ p {
 }
 
 .footer-icon {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-footer:hover,.social-footer:focus {
+  background-color: var(--accent-colore);
+}
+.footer-icon.inst {
+  background-image: url("../images/social-futer/instagram-fut.svg");
 }
 
-.footer-icon .inst {
-  background-image: url("./images/social-futer/instagram.svg");
-}
-
-.footer-icon .tweet {
+.footer-icon.tweet {
   background-image: url("../images/social-futer/tweeter.svg");
 }
 
-.footer-icon .facebook {
+.footer-icon.facebooke {
   background-image: url("../images/social-futer/facebook.svg");
 }
 
-.footer-icon .lin {
+.footer-icon.lin {
   background-image: url("../images/social-futer/linkedin.svg");
 }
 
