@@ -180,6 +180,42 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  font-size: 0px;
+}
+
+.social.list>.social {
+  margin-left: 10px;
+}
+
+.social.list>.social:nth-child(1) {
+  margin: 0;
+}
+
+.social>a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+
+.instagram {
+  background-image: url('../images/social-icon/instagram.svg');
+}
+
+
+.tweater {
+  background-image: url('../images/social-icon/twitter.svg');
+}
+
+.facebook {
+  background-image: url('../images/social-icon/facebook.svg');
+}
+
+.lindedin {
+  background-image: url('../images/social-icon/linkedin.svg');
 }
 
 .social.list>.social:hover,
@@ -224,6 +260,12 @@
 
 .buyers.list {
   display: flex;
+}
+
+.buyers .item {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .buyers.item.item:not(:nth-child(6n)) {
