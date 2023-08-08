@@ -66,6 +66,8 @@
 
 .portfolio-item.list>.work-block {
     width: calc((100% - 60px) / 3);
+    border: 1px solid #EEE;
+
 }
 
 .work-block:not(:nth-child(3n)) {

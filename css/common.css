@@ -114,8 +114,8 @@ p {
 
 .nav-menu-list>.item>.link-nav,
 .contacts.link {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav-menu-list>.item:not(:last-child) {
