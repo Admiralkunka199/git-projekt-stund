@@ -92,7 +92,6 @@
   padding-top: 94px;
   padding-bottom: 94px;
   flex-wrap: wrap;
-
 }
 
 .advantages.list {
@@ -104,31 +103,18 @@
   align-self: flex-start;
 }
 
-.advantages.list-element::before {
-  content: " ";
+.advantages.list-element {
   display: block;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
-.advantages.list-element:nth-child(1):before {
-  background-image: url("../images/Vector-icon.svg");
-}
-
-.advantages.list-element:nth-child(2):before {
-  background-image: url("../images/Vector-1.svg");
-}
-
-.advantages.list-element:nth-child(3):before {
-  background-image: url("../images/Vector-2.svg");
-}
-
-.advantages.list-element:nth-child(4):before {
-  background-image: url("../images/Vector-3.svg");
+.adv-block{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: var(--bg-team-color);
 }
 
 .advantages>.list-element+.list-element {
@@ -146,6 +132,7 @@
 .we-work.conteiner {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -203,7 +190,6 @@
 
 .team.list {
   width: calc((100% - 90px) / 4);
-  
 }
 
 .team.list:not(:nth-child(5n)) {
@@ -226,36 +212,6 @@
   margin: 0;
 }
 
-.social>a {
-  display: block;
-  width: 44px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-}
-
-
-.instagram {
-  background-image: url('../images/social-icon/instagram.svg');
-}
-
-
-.tweater {
-  background-image: url('../images/social-icon/twitter.svg');
-}
-
-.facebook {
-  background-image: url('../images/social-icon/facebook.svg');
-}
-
-.lindedin {
-  background-image: url('../images/social-icon/linkedin.svg');
-}
-
-.social.list>.social:hover,
-.social:focus {}
-
 .social.list:not(:nth-child(5n)) {
   margin-right: 10px;
 }
@@ -277,6 +233,25 @@
   text-align: center;
 }
 
+.social>a {
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--social-icon-team);
+}
+
+.social>a:hover, .social>a:focus {
+  background-color: var(--accent-colore);
+  color: var(--background-color-st);
+}
+.team-icon {
+  fill: currentColor;
+}
+
+.team-icon:hover, .team-icon:focus {
+  fill: currentColor;
+}
+
 /* section Постійні клієнти */
 .buyers-section {
   padding-top: 94px;
@@ -295,14 +270,33 @@
 
 .buyers.list {
   display: flex;
+  padding: 0;
+}
+.buyers-list{
+  width: 170px;
+    height: 92px;
 }
 
-.buyers .item {
+.buyers-list .item {
+  display: block;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  padding: 16px 32px;
+  text-align: center;
+  padding: 12px 16px;
+  color: var(--secondary-text-color);
 }
 
-.buyers.item.item:not(:nth-child(6n)) {
+.buyers-list:not(:nth-child(6n)) {
   margin-right: 30px;
+}
+
+.blogo {
+  fill: currentColor;
+}
+
+.buyers-list .item:hover, .buyers-list .item:focus,
+.blogo:hover,.blogo:focus {
+  color: var(--accent-colore);
+  border-color: var(--accent-colore);
+  fill: currentColor;
 }

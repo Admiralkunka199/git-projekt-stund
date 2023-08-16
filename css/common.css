@@ -7,6 +7,7 @@
   --adress-fotter: rgba(255, 255, 255, 0.60);
   --foter-bg: #2F303A;
   --social-button: rgba(255, 255, 255, 0.10);
+  --social-icon-team: #AFB1B8;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
 }
 
 h1,
@@ -51,28 +53,6 @@ p {
   align-items: center;
 }
 
-.list>.mailto::before {
-  content: "";
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-  background-repeat: no-repeat;
-  align-items: center;
-  background-image: url("../images/envelope.svg");
-  background-position: 0px 0px;
-}
-
-.list>.phone::before {
-  content: "";
-  display: inline-flex;
-  width: 20px;
-  height: 25px;
-  background-repeat: no-repeat;
-  align-items: center;
-  background-image: url("../images/smartphone.svg");
-  background-position: 0px 0px;
-}
 
 .address-list {
   padding: 0;
@@ -129,6 +109,7 @@ p {
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-colore);
+  fill: var(--accent-colore);
 }
 
 .link {
@@ -138,6 +119,11 @@ p {
   letter-spacing: 0.28px;
   text-decoration: none;
 }
+
+.icon-head {
+  margin-right: 10px;
+}
+
 
 .address-list {
   margin-left: auto;
@@ -188,39 +174,26 @@ p {
   padding: 0;
 }
 
-.list>.social-footer {
+
+.footer-icon {
   display: inline-flex;
+  width: 44px;
+  height: 44px;
   margin-right: 10px;
   padding: 12px;
   background-color: var(--social-button);
   border-radius: 50%;
-
-  font-size: 0;
+  color: var(--background-color-st);
 }
 
-.footer-icon {
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.social-footer:hover,.social-footer:focus {
+.footer-icon:hover, .footer-icon:focus {
   background-color: var(--accent-colore);
 }
-.footer-icon.inst {
-  background-image: url("../images/social-futer/instagram-fut.svg");
-}
 
-.footer-icon.tweet {
-  background-image: url("../images/social-futer/tweeter.svg");
-}
-
-.footer-icon.facebooke {
-  background-image: url("../images/social-futer/facebook.svg");
-}
-
-.footer-icon.lin {
-  background-image: url("../images/social-futer/linkedin.svg");
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 
