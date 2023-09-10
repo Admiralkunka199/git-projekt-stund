@@ -8,14 +8,19 @@
   --foter-bg: #2F303A;
   --social-button: rgba(255, 255, 255, 0.10);
   --social-icon-team: #AFB1B8;
+  --timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+*{
+  line-height: 1;
+}
 body {
   background-color: var(--background-color-st);
   color: var(--primary-text-colore);
   font-family: Roboto, sans-serif;
 }
-
+ul {
+  margin: 0;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -38,6 +43,10 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.main{
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .conteiner.header {
@@ -88,6 +97,28 @@ p {
   color: var(--accent-colore);
 }
 
+.link-nav.link{
+  position: relative;
+}
+/* .link-nav.link:active::after,.link-nav.link:focus::after,
+.link-nav.link:hover::after{ */
+  .link-nav.link::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-radius: 2px;
+  border: none;
+  background-color: var(--accent-colore);
+  transition: width 250ms var(--timing);
+}
+.link-nav.link:active::after,.link-nav.link:focus::after,
+.link-nav.link:hover::after{
+  width: 100%;
+}
 .nav-menu-list {
   margin-left: 93px;
 }
@@ -134,6 +165,10 @@ p {
 }
 
 /* footer */
+.foot.logo{
+  color: var(--background-color-st);
+}
+
 .adress-block {
   margin-right: 70px;
 }
@@ -205,4 +240,10 @@ p {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.address-map {
+  display: block;
+  text-decoration: none;
+  color: var(--background-color-st);
 }
